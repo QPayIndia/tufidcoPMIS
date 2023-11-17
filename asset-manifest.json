@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tufidcoPMIS/static/css/main.775c3157.css",
-    "main.js": "/tufidcoPMIS/static/js/main.8f8a47f5.js",
+    "main.js": "/tufidcoPMIS/static/js/main.91dedafd.js",
     "static/js/787.625357ab.chunk.js": "/tufidcoPMIS/static/js/787.625357ab.chunk.js",
     "static/media/tn-l.png": "/tufidcoPMIS/static/media/tn-l.0f47287e22100be4e0c9.png",
     "static/media/revenueIcon.svg": "/tufidcoPMIS/static/media/revenueIcon.6c4f7119db80f3e2418d3b65ddab1b4f.svg",
@@ -18,11 +18,11 @@
     "index.html": "/tufidcoPMIS/index.html",
     "static/media/search.svg": "/tufidcoPMIS/static/media/search.063cb8f0db78e84763a7b4c2b4816000.svg",
     "main.775c3157.css.map": "/tufidcoPMIS/static/css/main.775c3157.css.map",
-    "main.8f8a47f5.js.map": "/tufidcoPMIS/static/js/main.8f8a47f5.js.map",
+    "main.91dedafd.js.map": "/tufidcoPMIS/static/js/main.91dedafd.js.map",
     "787.625357ab.chunk.js.map": "/tufidcoPMIS/static/js/787.625357ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.775c3157.css",
-    "static/js/main.8f8a47f5.js"
+    "static/js/main.91dedafd.js"
   ]
 }
