@@ -359,6 +359,7 @@
 }
 .tableContainer table{
     width: 100%;
+    
 }
 
 .tableTop{
@@ -370,6 +371,9 @@
 
 .dataTable{
     width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 

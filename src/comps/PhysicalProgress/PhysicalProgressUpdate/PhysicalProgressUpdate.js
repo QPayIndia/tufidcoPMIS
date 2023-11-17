@@ -133,7 +133,7 @@ const PhysicalProgressUpdate = () => {
               <p><b>Project Name</b> : (A) Lakshmi Vinayaga Nagar Extension Cross Street – I</p>
 <p></p>
             </div>
-          <div className="gridContainer">
+          <div className="gridContainer2">
             {data.map((item,index) =>(
               <p style={{marginTop:"5px"}}><b>{item.name}</b> : {item.value}</p>
             ))}
