@@ -51,7 +51,7 @@ import TownPanchayat from "./comps/MunicipalCorp/TownPanchayat";
 
  function App() {
   return (
-    <Router basename="/tufidco">
+    <Router basename="/tufidcoPMIS">
     <Routes>
       <Route path="/login" element={<SignIn />} />
       <Route path="/navs" element={<VendorMaster />} />
