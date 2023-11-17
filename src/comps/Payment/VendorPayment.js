@@ -265,6 +265,11 @@ const VendorPayment = () => {
                 <p className="pageNo">Next</p>
               </div>
             </div>
+
+            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
+              <p className="Btn" style={{height:"fit-content"}}>Save</p>
+
+            </div>
          </div>
     
       
