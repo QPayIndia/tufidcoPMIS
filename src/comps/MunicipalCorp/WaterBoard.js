@@ -79,8 +79,7 @@ const WaterBoard = () => {
               <tbody>
               
                 <td className="vendorName">
-                Avadi<br></br>
-               <b> Code </b>: 252276
+                Chennai Metropolitan Water Supply And Sewerage Board
 
                 </td>
                 <td>
@@ -96,7 +95,7 @@ const WaterBoard = () => {
                 AAACS0001A
                 </td>
                 <td>
-                Avadi Municipal Corporation
+                
                 </td>
                 <td>
                 <div className="rowAfter">

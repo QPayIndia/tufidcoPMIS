@@ -79,12 +79,12 @@ const Municipality = () => {
               <tbody>
               
                 <td className="vendorName">
-                Avadi<br></br>
-               <b> Code </b>: 252276
+                Adiramapattinam<br></br>
+               <b> Code </b>: 252840
 
                 </td>
                 <td>
-                Chennai
+                Coimbatore - 569
                 </td>
                 <td>
                 12345678
@@ -96,7 +96,7 @@ const Municipality = () => {
                 AAACS0001A
                 </td>
                 <td>
-                Avadi Municipal Corporation
+                Adiramapattinam Municipality
                 </td>
                 <td>
                 <div className="rowAfter">

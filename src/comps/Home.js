@@ -9,7 +9,7 @@ const Home = ({ setvalue }) => {
   const cardData = [
     {
       name: "Corporations",
-      value: 200,
+      value: 21,
       icon: "business",
       backgroundColor: "#DDEFE0",
     },

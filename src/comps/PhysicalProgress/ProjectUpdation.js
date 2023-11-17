@@ -5,6 +5,7 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Link } from "react-router-dom";
 
 const ProjectUpdation = () => {
   
@@ -100,7 +101,7 @@ const ProjectUpdation = () => {
                 
                 <td>
                 <div className="rowAfter">
-                  <p className="greenBtn">View</p>
+                <Link to="/physicalprogressupdate" > <p className="greenBtn">View</p></Link>
                   <p className="orangeBtn">Edit</p>
                   <p className="blackBtn">Delete</p>
                  </div>

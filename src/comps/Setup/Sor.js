@@ -5,6 +5,8 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Line } from "react-chartjs-2";
+import { Link } from "react-router-dom";
 
 const SOR = () => {
 
@@ -69,7 +71,7 @@ const SOR = () => {
           </div>
 
           <div className="fullContainer">
-                <p>Add New</p>
+               <Link to="/addsor"> <p>Add New</p>  </Link>
           </div>
          
           <div className="dashboardContainer">

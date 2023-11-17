@@ -79,12 +79,11 @@ const TownPanchayat = () => {
               <tbody>
               
                 <td className="vendorName">
-                Avadi<br></br>
-               <b> Code </b>: 252276
-
+                Ambasamudram<br></br>
+               <b> Code </b>: 252954
                 </td>
                 <td>
-                Chennai
+                Tirunelveli - 592
                 </td>
                 <td>
                 12345678
@@ -96,7 +95,7 @@ const TownPanchayat = () => {
                 AAACS0001A
                 </td>
                 <td>
-                Avadi Municipal Corporation
+                Achampudur Town Panchayat
                 </td>
                 <td>
                 <div className="rowAfter">

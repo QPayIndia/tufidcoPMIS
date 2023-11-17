@@ -46,6 +46,9 @@ import Report from "./comps/Others/Report";
 import Municipality from "./comps/MunicipalCorp/Municipality";
 import WaterBoard from "./comps/MunicipalCorp/WaterBoard";
 import TownPanchayat from "./comps/MunicipalCorp/TownPanchayat";
+import AddSOR from "./comps/Setup/AddNew/AddSor";
+import PhysicalProgressUpdate from "./comps/PhysicalProgress/PhysicalProgressUpdate/PhysicalProgressUpdate";
+import VendorPayment from "./comps/Payment/VendorPayment";
 
 
 
@@ -87,8 +90,13 @@ import TownPanchayat from "./comps/MunicipalCorp/TownPanchayat";
       <Route path="/circular" element={<Circular />} />
       <Route path="/format" element={<Format />} />
       <Route path="/report" element={<Report />} />
+
+      <Route path="/physicalprogressupdate" element={<PhysicalProgressUpdate />} />
+      <Route path="/vendorpayment" element={<VendorPayment />} />
+
       <Route path="/sor" element={<SOR />} />
       <Route path="/nonsor" element={<NonSOR />} />
+      <Route path="/addsor" element={< AddSOR />} />
       <Route path="/masterdata" element={<MasterData />} />
       <Route path="/contractor" element={<Contractor />} />
       <Route path="/architect" element={<Architect />} />
