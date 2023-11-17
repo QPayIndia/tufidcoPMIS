@@ -116,6 +116,12 @@ const MobileNav = () => {
       ],
     },
     {
+      name: "Payment",
+      icon: "currency_rupee",
+      link:"/vendorpayment"
+      
+    },
+    {
       name: "Invoice",
       icon: "article",
       link:"/invoice"
