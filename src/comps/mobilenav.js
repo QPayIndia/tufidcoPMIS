@@ -12,6 +12,21 @@ const MobileNav = () => {
       
     },
     {
+      name: "Masters",
+      icon: "settings",
+      subNavs: [
+        {name: "Scheme Master", link: "/schememaster"},
+        {name: "Sector Master", link: "/sectormaster"},
+        {name: "Agency Type Master", link: "/agencytypemaster"},
+        {name: "ULB Master", link: "/ulbmaster"},
+        {name: "ULB Scheme Bank Master", link: "/ulbschemebankmaster"},
+        {name: "ULB KYC", link: "/ulbkyc"},
+        {name: "Bank Accounts", link: "/bankaccounts"},
+        
+       
+      ],
+    },
+    {
       name: "Setup",
       icon: "settings",
       subNavs: [

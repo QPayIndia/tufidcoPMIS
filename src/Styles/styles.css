@@ -10,7 +10,9 @@
     box-sizing: border-box;
 
 }
-
+.text{
+    color: #858585;
+}
 .cardBtn{
     height: 60px;
     display: flex;
@@ -20,6 +22,14 @@
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+}
+
+.form-select{
+    height: 30px;
+}
+
+.dropdown-content{
+    padding: 50px;
 }
 
 .sorBtn{
@@ -353,7 +363,7 @@
 .tableContainer{
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     width: 100%;
-    padding: 20PX;
+    padding: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -370,7 +380,7 @@
 }
 
 .dataTable{
-    width: 100%;
+    width: fit-content;
     display: block;
     overflow-x: auto;
     white-space: nowrap;
@@ -410,10 +420,13 @@
     padding-bottom: 5px;
     border-radius: 15px;
     color: #fff;
+    font-weight: 500;
+    text-align: center;
     width: fit-content;
     min-width: 70px;
-    background-color: #9BDD7C;
+    background-color: #1B8381;
     margin-bottom: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
 }
 
@@ -428,6 +441,7 @@
     width: 70px;
     background-color:orange;
     margin-bottom: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
 }
 .blackBtn{
@@ -441,6 +455,7 @@
     min-width: fit-content;
     background-color: #000;
     margin-bottom: 5px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     cursor: pointer;
 }
 
@@ -483,6 +498,8 @@
     
    
 }
+
+
 .textBoxContainer p{
     width: 30%;
 }
@@ -757,6 +774,8 @@
         margin-top: 20px;
     }
 
+    
+
     .tableContainer table{
         width: 100%;
         display: block;
@@ -910,6 +929,11 @@
         display: flex;
         flex-direction: column;
     }
+
+    .textBox input{
+        width: 100%;
+    }
+
     .mobilenavicon{
         display: block;
     }
@@ -1082,6 +1106,10 @@
         padding-left: 0px;
         padding-right: 0px;
         padding: 20px;
+    }
+
+    .textBox input{
+        width: 100%;
     }
     
     .dashHead h3 {

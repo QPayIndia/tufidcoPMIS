@@ -205,8 +205,8 @@ const VendorPayment = () => {
               </input>
             </div>
           </div>
-          <div style={{display:"flex",justifyContent:"space-between",width:"100%",justifyContent:"center"}}>
-          <table className="dataTable">
+          <div style={{display:"flex",justifyContent:"space-evenly",position:"relative"}}>
+          <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
                   Sr

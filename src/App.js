@@ -49,6 +49,14 @@ import TownPanchayat from "./comps/MunicipalCorp/TownPanchayat";
 import AddSOR from "./comps/Setup/AddNew/AddSor";
 import PhysicalProgressUpdate from "./comps/PhysicalProgress/PhysicalProgressUpdate/PhysicalProgressUpdate";
 import VendorPayment from "./comps/Payment/VendorPayment";
+import SchemeMaster from "./comps/Masters/SchemeMaster";
+import SectorMaster from "./comps/Masters/SectorMaster";
+import AgencyTypeMaster from "./comps/Masters/AgencytypeMaster";
+import ULBMaster from "./comps/Masters/ULBMaster";
+import ULBSchemeBankMaster from "./comps/Masters/ULBSchemeBankMaster";
+import ULBKkyc from "./comps/Masters/ULBkyc";
+import BankAccounts from "./comps/Masters/BankAccounts";
+import PanCardDetails from "./comps/Masters/PanCardDetails";
 
 
 
@@ -74,6 +82,9 @@ import VendorPayment from "./comps/Payment/VendorPayment";
       <Route path="/financialprogresslist" element={<FinancialProgressList />} />
       <Route path="/users" element={<Users />} />
 
+      <Route path="/schememaster" element={<SchemeMaster />} />
+      <Route path="/sectormaster" element={<SectorMaster />} />
+
       <Route path="/schemeopeningbalance" element={<SchemeOpeningBalance />} />
       <Route path="/schememoneyreceived" element={<SchemeMoneyReceived />} />
       <Route path="/schemefinancialposition" element={<SchemeFinancialPosition />} />
@@ -93,6 +104,12 @@ import VendorPayment from "./comps/Payment/VendorPayment";
 
       <Route path="/physicalprogressupdate" element={<PhysicalProgressUpdate />} />
       <Route path="/vendorpayment" element={<VendorPayment />} />
+      <Route path="/agencytypemaster" element={<AgencyTypeMaster />} />
+      <Route path="/ulbmaster" element={<ULBMaster />} />
+      <Route path="/ulbschemebankmaster" element={<ULBSchemeBankMaster />} />
+      <Route path="/ulbkyc" element={<ULBKkyc />} />
+      <Route path="/bankaccounts" element={<BankAccounts />} />
+      <Route path="/pancarddetails" element={<PanCardDetails />} />
 
       <Route path="/sor" element={<SOR />} />
       <Route path="/nonsor" element={<NonSOR />} />
