@@ -22,6 +22,7 @@ const MobileNav = () => {
         {name: "ULB Scheme Bank Master", link: "/ulbschemebankmaster"},
         {name: "ULB KYC", link: "/ulbkyc"},
         {name: "Bank Accounts", link: "/bankaccounts"},
+        {name: "PAN Card Details", link: "/pancarddetails"},
         
        
       ],
