@@ -239,8 +239,9 @@ const ProjectUpdate = () => {
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
+                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
 
-                        </td>
+                  </td>
                   </tr>
                 </table>
 
