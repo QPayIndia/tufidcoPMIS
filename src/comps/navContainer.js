@@ -20,7 +20,7 @@ const Sidebar = () => {
       subNavs: [
         {name: "Scheme Master", link: "/schememaster"},
         {name: "Sector Master", link: "/sectormaster"},
-        {name: "ULB Master", link: "/agencytypemaster"},
+        {name: "ULB Type Master", link: "/agencytypemaster"},
         {name: "ULB Master", link: "/ulbmaster"},
         {name: "ULB Scheme Bank Master", link: "/ulbschemebankmaster"},
         {name: "ULB KYC", link: "/ulbkyc"},
