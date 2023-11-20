@@ -57,6 +57,12 @@ import ULBSchemeBankMaster from "./comps/Masters/ULBSchemeBankMaster";
 import ULBKkyc from "./comps/Masters/ULBkyc";
 import BankAccounts from "./comps/Masters/BankAccounts";
 import PanCardDetails from "./comps/Masters/PanCardDetails";
+import ProjectMaster from "./comps/Masters/ProjectMaster";
+import FundRelease from "./comps/Masters/FundRelease";
+import ReleaseHistory from "./comps/Masters/ReleaseHistory";
+import ProjectProgress from "./comps/Masters/ProjectProgress";
+import ProjectUpdate from "./comps/Masters/ProjectUpdate";
+import ProgressUpdate from "./comps/Masters/ProgressUpdate";
 
 
 
@@ -110,6 +116,13 @@ import PanCardDetails from "./comps/Masters/PanCardDetails";
       <Route path="/ulbkyc" element={<ULBKkyc />} />
       <Route path="/bankaccounts" element={<BankAccounts />} />
       <Route path="/pancarddetails" element={<PanCardDetails />} />
+
+      <Route path="/projectmaster" element={<ProjectMaster />} />
+      <Route path="/fundrelease" element={<FundRelease />} />
+      <Route path="/releasehistory" element={<ReleaseHistory />} />
+      <Route path="/projectprogress" element={<ProjectProgress />} />
+      <Route path="/projectupdate" element={<ProjectUpdate />} />
+      <Route path="/progressupdate" element={<ProgressUpdate />} />
 
       <Route path="/sor" element={<SOR />} />
       <Route path="/nonsor" element={<NonSOR />} />

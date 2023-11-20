@@ -23,7 +23,12 @@ const MobileNav = () => {
         {name: "ULB KYC", link: "/ulbkyc"},
         {name: "Bank Accounts", link: "/bankaccounts"},
         {name: "PAN Card Details", link: "/pancarddetails"},
-        
+
+        {name: "Project Master", link: "/projectmaster"},
+        {name: "Fund Release", link: "/fundrelease"},
+        //{name: "Release History", link: "/releasehistory"},
+        {name: "Project Progress", link: "/projectprogress"},
+        {name: "Project Update", link: "/projectupdate"}
        
       ],
     },

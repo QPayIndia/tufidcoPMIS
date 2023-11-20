@@ -5,43 +5,12 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Link } from "react-router-dom";
 import Select from 'react-select';
 
-
-const BankAccounts = () => {
-
-  const textBox = [
-
-    {
-      name:"Bank Name",
-      value:""
-    },
-    {
-      name:"Account Number",
-      value:""
-    },
-    {
-      name:"IFSC Code",
-      value:""
-    },
-    {
-      name:"Branch Name",
-      value:""
-    }
-  ]
-  
-  const data = [
-   
-    {
-      name:"Scheme",
-      scheme:"Scheme A",
-      bank: "SBI"
-    }
-    
-  ];
-  
+const FundRelease = () => {
   const options = [
-    { value: "", label: "---", color: "#fffff" }
+    { value: "", label: "Ring Road", color: "#fffff" }
     ];
 
   const styles = {
@@ -56,6 +25,19 @@ const BankAccounts = () => {
    
   };
 
+  
+  const data = [
+   
+    {
+      name:"Ring Road",
+      date:"02/01/2023",
+      amount: "45.00",
+      id:"K_MI_088_2022_W_1993"
+    }
+    
+    
+  ];
+
   return (
     <>
      <Header setvalue={false} />
@@ -64,7 +46,7 @@ const BankAccounts = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>Bank Accounts</h3>
+              <h3>Fund Release</h3>
              
               <div className="dashItems">
               <img
@@ -72,7 +54,7 @@ const BankAccounts = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   Bank Accounts</p>
+                 <p>/   Fund Release </p>
                 <div className="searchBar">
                  
                 </div>
@@ -83,49 +65,94 @@ const BankAccounts = () => {
              
            
           </div>
-         
 
           <div className="CardContainer" style={{gap:"20px"}}>
-              <table>
+          <table>
                   <tr>
                     <td style={{width:"30%"}}>
                     <p >
-                   Scheme
+                   Project
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
-                      <div style={{width:"80%",marginLeft:"20px"}}>
+                      <div style={{display:"flex",flexDirection:"row"}}>
+                      <div style={{width:"60%",marginLeft:"20px"}}>
                       <Select myFontSize="20px" options={options} styles={styles} />
+                       </div>
+                       <div className="Btn" style={{marginLeft:"20px"}}>
+                     <Link to="/releasehistory"> <p>Show Release History</p> </Link>
+              </div>
+                        
                       </div>
                    
                         </td>
                   </tr>
                 </table>
-            {textBox.map((item,index)=>(
-                  <table>
+
+                <table>
                   <tr>
                     <td style={{width:"30%"}}>
                     <p >
-                  {item.name}
+                  Project Id
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
-                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+
+                      <p style={{width:"100%",marginLeft:"20px"}}>K_MI_088_2022_W_1993</p>
+                        </td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  Fund Release Date
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input> 
+                      <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
+                      </div>
 
                         </td>
                   </tr>
                 </table>
-            ))}
 
-<div style={{display:"flex",flexDirection:"row",marginTop:"10px",verticalAlign:"center"}}>
-           <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}> 
-           <p >Upload Account Passbook 1st Page</p>
-           </div>
-              <div className="Btn" style={{marginLeft:"20px"}}>
-                Select File
-              </div>
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                 Release Amount
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                    <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
+                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                    <p>(Lakhs)</p>
+                      </div>
+                   
+                     
+                        </td>
+                  </tr>
+                </table>
 
-            </div>
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                 Remarks
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                    <input style={{height:"50px",marginLeft:"20px",width:"80%"}} type="text"></input>
+
+                        </td>
+                  </tr>
+                </table>
+               
+           
            
              
            
@@ -159,13 +186,19 @@ const BankAccounts = () => {
                   Sr
                 </td>
                 <td>
-                Scheme
+              Project Name
                 </td>
                 <td>
-                Bank
+                Id
                 </td>
                 <td>
-               Action
+                Release Date
+                </td>
+                <td>
+               Release Amount (lakhs)
+                </td>
+                <td>
+              Action
                 </td>
                 
 
@@ -179,17 +212,22 @@ const BankAccounts = () => {
 
                </td>
                
-               
                <td>
-               {item.scheme}
+               {item.name}
                </td>
                <td>
-               {item.bank}
+               {item.id}
+               </td>
+               <td>
+               {item.date}
+               </td>
+               <td>
+               {item.amount}
                </td>
                <td>
                <div className="rowAfter">
                   
-                  <p className="orangeBtn">Edit</p>
+               <p className="orangeBtn">Edit</p>
                   <p className="blackBtn">Delete</p>
                  </div>
                </td>
@@ -227,4 +265,4 @@ const BankAccounts = () => {
   );
 };
 
-export default BankAccounts;
+export default FundRelease;

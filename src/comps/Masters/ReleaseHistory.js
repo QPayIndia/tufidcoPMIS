@@ -5,21 +5,41 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Link } from "react-router-dom";
+import Select from 'react-select';
 
-const AgencyTypeMaster = () => {
+const ReleaseHistory = () => {
+  const options = [
+    { value: "", label: "---", color: "#fffff" }
+    ];
 
+  const styles = {
+    option: (provided, state) => ({
+      ...provided,
+      fontWeight: state.isSelected ? "bold" : "normal",
+      color: "grey",
+      backgroundColor: state.data.color,
+      fontSize: "small",
+    }),
+  
+   
+  };
 
+ 
   
   const data = [
    
     {
-      name:"Municipality",
-      code:"K001"
+      date:"02/01/2023",
+      amount:"27.00"
+      
     },
     {
-      name:"Corporation",
-      code : "S001"
+      date:"27/04/2023",
+      amount:"12.00"
+      
     }
+    
   ];
 
   return (
@@ -30,7 +50,7 @@ const AgencyTypeMaster = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>AgencyType Master</h3>
+              <h3>Release History</h3>
              
               <div className="dashItems">
               <img
@@ -38,7 +58,7 @@ const AgencyTypeMaster = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   AgencyType Master </p>
+                 <p>/   Release History </p>
                 <div className="searchBar">
                  
                 </div>
@@ -51,32 +71,39 @@ const AgencyTypeMaster = () => {
           </div>
 
           <div className="CardContainer" style={{gap:"20px"}}>
-          
-             <table>
-                <tr>
-                  <td style={{width:"30%"}}>
-                  <p >
-                ULB Type Name
-                   </p>
-                  </td>
-                  <td style={{width:"100%"}}>
-                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+          <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                   Project Name
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{width:"80%",marginLeft:"20px"}}>
+                      <p>Ring Road</p>
+                      </div>
+                   
+                        </td>
+                  </tr>
+                </table>
 
-                      </td>
-                </tr>
-              </table>
-             
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                   Project ID
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{width:"80%",marginLeft:"20px"}}>
+                      <p>K_MI_088_2022_W_1993</p>
+                      </div>
+                   
+                        </td>
+                  </tr>
+                </table>
 
-            
-            <div style={{display:"flex",justifyContent:"space-between"}}>
-             
-              
-              <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
-              <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
-              </div>
-              <div></div>
-            </div>
+               
           </div>
 
           <div className="tableContainer">
@@ -97,12 +124,12 @@ const AgencyTypeMaster = () => {
                   Sr
                 </td>
                 <td>
-              ULB Type Name
+              Release Date
                 </td>
-              
                 <td>
-               Action
+                Release Amount (Lakhs)
                 </td>
+                
                 
 
                 
@@ -115,17 +142,14 @@ const AgencyTypeMaster = () => {
 
                </td>
                
-               <td style={{textAlign:"start"}}>
-               {item.name}
-               </td>
-               
                <td>
-               <div className="rowAfter">
-                  
-                  <p className="orangeBtn">Edit</p>
-                  <p className="blackBtn">Delete</p>
-                 </div>
+               {item.date}
                </td>
+               <td>
+               {item.amount}
+               </td>
+              
+            
                
                     </tr>
                 ))}
@@ -160,4 +184,4 @@ const AgencyTypeMaster = () => {
   );
 };
 
-export default AgencyTypeMaster;
+export default ReleaseHistory;

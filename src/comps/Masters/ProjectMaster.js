@@ -5,41 +5,10 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Link } from "react-router-dom";
 import Select from 'react-select';
 
-
-const BankAccounts = () => {
-
-  const textBox = [
-
-    {
-      name:"Bank Name",
-      value:""
-    },
-    {
-      name:"Account Number",
-      value:""
-    },
-    {
-      name:"IFSC Code",
-      value:""
-    },
-    {
-      name:"Branch Name",
-      value:""
-    }
-  ]
-  
-  const data = [
-   
-    {
-      name:"Scheme",
-      scheme:"Scheme A",
-      bank: "SBI"
-    }
-    
-  ];
-  
+const ProjectMaster = () => {
   const options = [
     { value: "", label: "---", color: "#fffff" }
     ];
@@ -56,6 +25,19 @@ const BankAccounts = () => {
    
   };
 
+  
+  
+  const data = [
+   
+    {
+      name:"Ring Road",
+      ulb:"Ambasamudram",
+      sector: "SRP",
+      id:"K_MI_088_2022_W_1993"
+    }
+    
+  ];
+
   return (
     <>
      <Header setvalue={false} />
@@ -64,7 +46,7 @@ const BankAccounts = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>Bank Accounts</h3>
+              <h3>Project Master</h3>
              
               <div className="dashItems">
               <img
@@ -72,7 +54,7 @@ const BankAccounts = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   Bank Accounts</p>
+                 <p>/   Project Master </p>
                 <div className="searchBar">
                  
                 </div>
@@ -83,14 +65,27 @@ const BankAccounts = () => {
              
            
           </div>
-         
 
           <div className="CardContainer" style={{gap:"20px"}}>
-              <table>
+          <table>
                   <tr>
                     <td style={{width:"30%"}}>
                     <p >
-                   Scheme
+                  Name
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+
+                        </td>
+                  </tr>
+                </table>
+        
+          <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                   ULB
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
@@ -101,12 +96,39 @@ const BankAccounts = () => {
                         </td>
                   </tr>
                 </table>
-            {textBox.map((item,index)=>(
-                  <table>
+                <table>
                   <tr>
                     <td style={{width:"30%"}}>
                     <p >
-                  {item.name}
+                   Sector
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{width:"80%",marginLeft:"20px"}}>
+                      <Select myFontSize="20px" options={options} styles={styles} />
+                      </div>
+                   
+                        </td>
+                  </tr>
+                </table>
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  Project Id
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+
+                        </td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  Co Funded by
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
@@ -115,17 +137,39 @@ const BankAccounts = () => {
                         </td>
                   </tr>
                 </table>
-            ))}
 
-<div style={{display:"flex",flexDirection:"row",marginTop:"10px",verticalAlign:"center"}}>
-           <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}> 
-           <p >Upload Account Passbook 1st Page</p>
-           </div>
-              <div className="Btn" style={{marginLeft:"20px"}}>
-                Select File
-              </div>
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                 Administration Sanction Name
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
 
-            </div>
+                        </td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                 Sanction Date
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+
+                      <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
+
+                      </div>
+
+                        </td>
+                  </tr>
+                </table>
            
              
            
@@ -159,13 +203,16 @@ const BankAccounts = () => {
                   Sr
                 </td>
                 <td>
-                Scheme
+              Name
                 </td>
                 <td>
-                Bank
+                ULB
                 </td>
                 <td>
-               Action
+                Sector
+                </td>
+                <td>
+               Project Id
                 </td>
                 
 
@@ -179,20 +226,19 @@ const BankAccounts = () => {
 
                </td>
                
+               <td>
+               {item.name}
+               </td>
+               <td>
+               {item.ulb}
+               </td>
+               <td>
+               {item.sector}
+               </td>
+               <td>
+               {item.id}
+               </td>
                
-               <td>
-               {item.scheme}
-               </td>
-               <td>
-               {item.bank}
-               </td>
-               <td>
-               <div className="rowAfter">
-                  
-                  <p className="orangeBtn">Edit</p>
-                  <p className="blackBtn">Delete</p>
-                 </div>
-               </td>
                
                     </tr>
                 ))}
@@ -214,10 +260,7 @@ const BankAccounts = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+           
          </div>
          
       
@@ -227,4 +270,4 @@ const BankAccounts = () => {
   );
 };
 
-export default BankAccounts;
+export default ProjectMaster;

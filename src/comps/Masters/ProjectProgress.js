@@ -5,21 +5,20 @@ import NavBar from "../navContainer.js";
 import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
+import { Link } from "react-router-dom";
+import Select from 'react-select';
 
-const AgencyTypeMaster = () => {
-
-
+const ProjectProgress = () => {
+ 
   
   const data = [
    
     {
-      name:"Municipality",
-      code:"K001"
+      name:"Ring Road",
+      id:"K_MI_088_2022_W_1993",
     },
-    {
-      name:"Corporation",
-      code : "S001"
-    }
+   
+    
   ];
 
   return (
@@ -30,7 +29,7 @@ const AgencyTypeMaster = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>AgencyType Master</h3>
+              <h3>Project Progress</h3>
              
               <div className="dashItems">
               <img
@@ -38,7 +37,7 @@ const AgencyTypeMaster = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   AgencyType Master </p>
+                 <p>/   Project Progress </p>
                 <div className="searchBar">
                  
                 </div>
@@ -50,34 +49,7 @@ const AgencyTypeMaster = () => {
            
           </div>
 
-          <div className="CardContainer" style={{gap:"20px"}}>
-          
-             <table>
-                <tr>
-                  <td style={{width:"30%"}}>
-                  <p >
-                ULB Type Name
-                   </p>
-                  </td>
-                  <td style={{width:"100%"}}>
-                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-
-                      </td>
-                </tr>
-              </table>
-             
-
-            
-            <div style={{display:"flex",justifyContent:"space-between"}}>
-             
-              
-              <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
-              <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
-              </div>
-              <div></div>
-            </div>
-          </div>
+       
 
           <div className="tableContainer">
           <div className="tableTop">
@@ -97,9 +69,11 @@ const AgencyTypeMaster = () => {
                   Sr
                 </td>
                 <td>
-              ULB Type Name
+              Project Name
                 </td>
-              
+                <td>
+                Id
+                </td>
                 <td>
                Action
                 </td>
@@ -115,15 +89,17 @@ const AgencyTypeMaster = () => {
 
                </td>
                
-               <td style={{textAlign:"start"}}>
+               <td>
                {item.name}
                </td>
-               
+            
+               <td>
+               {item.id}
+               </td>
                <td>
                <div className="rowAfter">
                   
-                  <p className="orangeBtn">Edit</p>
-                  <p className="blackBtn">Delete</p>
+            <Link to="/progressupdate"><p className="greenBtn">Update Progress</p></Link>
                  </div>
                </td>
                
@@ -147,10 +123,6 @@ const AgencyTypeMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
          </div>
          
       
@@ -160,4 +132,4 @@ const AgencyTypeMaster = () => {
   );
 };
 
-export default AgencyTypeMaster;
+export default ProjectProgress;

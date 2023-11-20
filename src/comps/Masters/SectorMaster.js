@@ -16,7 +16,7 @@ const SectorMaster = () => {
       code:"K001"
     },
     {
-      name:"paver Block",
+      name:"Paver Block",
       code : "S001"
     }
   ];
