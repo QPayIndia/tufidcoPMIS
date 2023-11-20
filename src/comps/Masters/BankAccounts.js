@@ -10,6 +10,12 @@ import Select from 'react-select';
 
 const BankAccounts = () => {
 
+  const schemes = [
+    { value: "", label: "KNMT", color: "#fffff" },
+    { value: "", label: "Singara Chennai", color: "#fffff" }
+   
+    ];
+
   const textBox = [
 
     {
@@ -95,7 +101,7 @@ const BankAccounts = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={schemes} styles={styles} />
                       </div>
                    
                         </td>
@@ -134,7 +140,7 @@ const BankAccounts = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -156,7 +162,7 @@ const BankAccounts = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 Scheme
@@ -214,10 +220,7 @@ const BankAccounts = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+           
          </div>
          
       

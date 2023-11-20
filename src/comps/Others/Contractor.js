@@ -82,7 +82,7 @@ const Contractor = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 Concessionaire Name

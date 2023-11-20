@@ -121,7 +121,7 @@ const ReleaseHistory = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               Release Date
@@ -171,10 +171,7 @@ const ReleaseHistory = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+           
          </div>
          
       

@@ -66,7 +66,7 @@ const SectorMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -89,7 +89,7 @@ const SectorMaster = () => {
           <table style={{width:"fit-content"}} className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 Name
@@ -142,10 +142,7 @@ const SectorMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+            
          </div>
          
       

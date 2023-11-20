@@ -73,7 +73,7 @@ const Attendance = () => {
                 <table className="dataTable">
                   <thead>
                   <td>
-                    Sr
+                    Sr. No.
                   </td>
                     <td>
                    Name

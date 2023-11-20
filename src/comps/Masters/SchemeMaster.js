@@ -114,7 +114,7 @@ const SchemeMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -136,7 +136,7 @@ const SchemeMaster = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               Scheme Name
@@ -193,10 +193,7 @@ const SchemeMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+           
          </div>
          
       

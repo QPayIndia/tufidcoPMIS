@@ -66,7 +66,7 @@ const ProjectProgress = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               Project Name

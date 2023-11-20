@@ -81,7 +81,7 @@ const Supplier = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 Supplier Name

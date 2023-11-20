@@ -9,6 +9,21 @@ import { Link } from "react-router-dom";
 import Select from 'react-select';
 
 const ProjectMaster = () => {
+
+  const ulbs = [
+    { value: "", label: "Ambasamudram", color: "#fffff" },
+    { value: "", label: "Chennai", color: "#fffff" },
+    { value: "", label: "Pudukottai", color: "#fffff" },
+    { value: "", label: "Erode", color: "#fffff" }
+    ];
+
+    const sectors = [
+      { value: "", label: "Parks", color: "#fffff" },
+      { value: "", label: "Water Bodies", color: "#fffff" },
+      { value: "", label: "UGSS", color: "#fffff" },
+      { value: "", label: "School", color: "#fffff" }
+      ];
+
   const options = [
     { value: "", label: "---", color: "#fffff" }
     ];
@@ -90,7 +105,7 @@ const ProjectMaster = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={ulbs} styles={styles} />
                       </div>
                    
                         </td>
@@ -105,7 +120,7 @@ const ProjectMaster = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={sectors} styles={styles} />
                       </div>
                    
                         </td>
@@ -119,7 +134,9 @@ const ProjectMaster = () => {
                     </p>
                     </td>
                     <td style={{width:"100%"}}>
-
+                        <p style={{marginLeft:"20px"}}>
+                        K_MI_088_2022_W_1993
+                        </p>
                         </td>
                   </tr>
                 </table>
@@ -161,7 +178,7 @@ const ProjectMaster = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
 
@@ -178,7 +195,7 @@ const ProjectMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -200,7 +217,7 @@ const ProjectMaster = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               Name

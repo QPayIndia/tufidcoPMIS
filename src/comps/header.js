@@ -35,7 +35,7 @@ const Header = ({setvalue}) => {
       
     <div className="userProfile" onClick={handleDropdownToggle}>
       <div className="userPicture">
-        <img src={userPicture} alt="user" />
+       
       </div>
       <p style={{fontSize:"medium"}}>Admin</p>
 

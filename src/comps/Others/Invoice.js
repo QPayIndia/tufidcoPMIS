@@ -128,7 +128,7 @@ const Invoice = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                Invoice No

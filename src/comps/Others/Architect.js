@@ -81,7 +81,7 @@ const Architect = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 Architect Name

@@ -77,7 +77,7 @@ const AllocationAndExpenditure = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                Financial Year

@@ -13,10 +13,24 @@ const ULBSchemeBankMaster = () => {
     { value: "", label: "---", color: "#fffff" }
     ];
 
+    const schemes = [
+      { value: "", label: "KNMT", color: "#fffff" },
+      { value: "", label: "Singara Chennai", color: "#fffff" }
+     
+      ];
+
+    const ulbs = [
+      { value: "", label: "Ambasamudram", color: "#fffff" },
+      { value: "", label: "Chennai", color: "#fffff" },
+      { value: "", label: "Pudukottai", color: "#fffff" },
+      { value: "", label: "Erode", color: "#fffff" }
+      ];
+
+
   const styles = {
     option: (provided, state) => ({
       ...provided,
-      fontWeight: state.isSelected ? "bold" : "normal",
+      
       color: "grey",
       backgroundColor: state.data.color,
       fontSize: "small",
@@ -93,7 +107,7 @@ const ULBSchemeBankMaster = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={ulbs} styles={styles} />
                       </div>
                    
                         </td>
@@ -108,7 +122,7 @@ const ULBSchemeBankMaster = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={schemes} styles={styles} />
                       </div>
                    
                         </td>
@@ -137,7 +151,7 @@ const ULBSchemeBankMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -159,7 +173,7 @@ const ULBSchemeBankMaster = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               ULB
@@ -222,10 +236,7 @@ const ULBSchemeBankMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+            
          </div>
          
       

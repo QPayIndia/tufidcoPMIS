@@ -21,6 +21,13 @@ const ProjectUpdate = () => {
     },
   ]
 
+  const sectors = [
+    { value: "", label: "Parks", color: "#fffff" },
+    { value: "", label: "Water Bodies", color: "#fffff" },
+    { value: "", label: "UGSS", color: "#fffff" },
+    { value: "", label: "School", color: "#fffff" }
+    ];
+
   const options = [
     { value: "", label: "---", color: "#fffff" }
     ];
@@ -41,7 +48,17 @@ const ProjectUpdate = () => {
    
   };
 
-  
+  const schemes = [
+    { value: "", label: "KNMT", color: "#fffff" },
+    { value: "", label: "Singara Chennai", color: "#fffff" }
+   
+    ];
+
+    const years = [
+      { value: "", label: "2022", color: "#fffff" },
+      { value: "", label: "2023", color: "#fffff" }
+     
+      ];
   
   const data = [
    
@@ -94,7 +111,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={schemes} styles={styles} />
                       </div>
                    
                         </td>
@@ -110,7 +127,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={years} styles={styles} />
                       </div>
                    
                         </td>
@@ -126,7 +143,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{width:"80%",marginLeft:"20px"}}>
-                      <Select myFontSize="20px" options={options} styles={styles} />
+                      <Select myFontSize="20px" options={sectors} styles={styles} />
                       </div>
                    
                         </td>
@@ -201,7 +218,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
 
@@ -221,7 +238,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
 
@@ -254,7 +271,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
 
@@ -291,7 +308,7 @@ const ProjectUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
 
@@ -347,7 +364,7 @@ const ProjectUpdate = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -369,7 +386,7 @@ const ProjectUpdate = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               Project Name

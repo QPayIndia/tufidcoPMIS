@@ -51,7 +51,6 @@ import PhysicalProgressUpdate from "./comps/PhysicalProgress/PhysicalProgressUpd
 import VendorPayment from "./comps/Payment/VendorPayment";
 import SchemeMaster from "./comps/Masters/SchemeMaster";
 import SectorMaster from "./comps/Masters/SectorMaster";
-import AgencyTypeMaster from "./comps/Masters/AgencytypeMaster";
 import ULBMaster from "./comps/Masters/ULBMaster";
 import ULBSchemeBankMaster from "./comps/Masters/ULBSchemeBankMaster";
 import ULBKkyc from "./comps/Masters/ULBkyc";
@@ -63,6 +62,7 @@ import ReleaseHistory from "./comps/Masters/ReleaseHistory";
 import ProjectProgress from "./comps/Masters/ProjectProgress";
 import ProjectUpdate from "./comps/Masters/ProjectUpdate";
 import ProgressUpdate from "./comps/Masters/ProgressUpdate";
+import ULBTypeMaster from "./comps/Masters/ULBtypeMaster";
 
 
 
@@ -110,7 +110,7 @@ import ProgressUpdate from "./comps/Masters/ProgressUpdate";
 
       <Route path="/physicalprogressupdate" element={<PhysicalProgressUpdate />} />
       <Route path="/vendorpayment" element={<VendorPayment />} />
-      <Route path="/agencytypemaster" element={<AgencyTypeMaster />} />
+      <Route path="/agencytypemaster" element={<ULBTypeMaster />} />
       <Route path="/ulbmaster" element={<ULBMaster />} />
       <Route path="/ulbschemebankmaster" element={<ULBSchemeBankMaster />} />
       <Route path="/ulbkyc" element={<ULBKkyc />} />

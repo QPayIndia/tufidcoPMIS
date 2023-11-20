@@ -6,10 +6,27 @@ import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
 import { Link } from "react-router-dom";
+import Select from 'react-select';
 
 const ULBMaster = () => {
 
   const[type,setType] = useState("Loan");
+
+  const styles = {
+    option: (provided, state) => ({
+      ...provided,
+      
+      color: "grey",
+      backgroundColor: state.data.color,
+      fontSize: "small",
+    }),
+  
+  };
+  const options = [
+    { value: "", label: "Municipality", color: "#fffff" },
+    { value: "", label: "Corporation", color: "#fffff" },
+    { value: "", label: "Town Panchayat", color: "#fffff" }
+    ];
 
   const typeopt = [
     {
@@ -99,10 +116,13 @@ const ULBMaster = () => {
                 ULB Type
                   </p>
                   </td>
+                 
                   <td style={{width:"100%"}}>
-                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-
-                  </td>
+                      <div style={{width:"80%",marginLeft:"20px"}}>
+                      <Select myFontSize="20px" options={options} styles={styles} />
+                      </div>
+                   
+                        </td>
                 </tr>
               </table>
 
@@ -112,7 +132,7 @@ const ULBMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -126,7 +146,7 @@ const ULBMaster = () => {
            <p >Select Master Excel File</p>
            </div>
               <div className="Btn" style={{marginLeft:"20px"}}>
-                Choose File
+              Select File
               </div>
 
             </div>
@@ -147,7 +167,7 @@ const ULBMaster = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                 ULB Name
@@ -210,10 +230,7 @@ const ULBMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+           
          </div>
          
       

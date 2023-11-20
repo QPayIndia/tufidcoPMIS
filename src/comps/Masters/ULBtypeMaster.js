@@ -6,7 +6,7 @@ import userPicture from "../../assets/image.png";
 import home from "../../assets/home.svg";
 import Header from "../header.js";
 
-const AgencyTypeMaster = () => {
+const ULBTypeMaster = () => {
 
 
   
@@ -30,7 +30,7 @@ const AgencyTypeMaster = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>AgencyType Master</h3>
+              <h3>ULB Type Master</h3>
              
               <div className="dashItems">
               <img
@@ -38,7 +38,7 @@ const AgencyTypeMaster = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   AgencyType Master </p>
+                 <p>/   ULB Type Master </p>
                 <div className="searchBar">
                  
                 </div>
@@ -72,7 +72,7 @@ const AgencyTypeMaster = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>
@@ -94,7 +94,7 @@ const AgencyTypeMaster = () => {
           <table className="dataTable" style={{width:"fit-content"}}>
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
               ULB Type Name
@@ -147,10 +147,7 @@ const AgencyTypeMaster = () => {
               </div>
             </div>
 
-            <div style={{justifyContent:"space-evenly",display:"flex",marginTop:"10px",flexDirection:"row",width:"100%"}}>
-              <p className="Btn" style={{height:"fit-content"}}>Save</p>
-
-            </div>
+            
          </div>
          
       
@@ -160,4 +157,4 @@ const AgencyTypeMaster = () => {
   );
 };
 
-export default AgencyTypeMaster;
+export default ULBTypeMaster;

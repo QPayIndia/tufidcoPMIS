@@ -25,11 +25,8 @@ const PanCardDetails = () => {
     {
       name:"Sur Name",
       value:""
-    },
-    {
-      name:"DOB",
-      value:""
     }
+  
   ]
   
   const data = [
@@ -86,13 +83,31 @@ const PanCardDetails = () => {
                   </tr>
                 </table>
             ))}
+              <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  DOB
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
+
+                      <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
+
+                      </div>
+
+                        </td>
+                  </tr>
+                </table>
 
 <div style={{display:"flex",flexDirection:"row",marginTop:"10px",verticalAlign:"center"}}>
            <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}> 
            <p >Upload Scan Copy</p>
            </div>
               <div className="Btn" style={{marginLeft:"20px"}}>
-                Upload File
+                Select File
               </div>
 
             </div>
@@ -104,7 +119,7 @@ const PanCardDetails = () => {
              
               
               <div style={{display:"flex",flexDirection:"row",marginTop:"30px"}}>
-              <p className="greenBtn">Add</p>
+              <p className="greenBtn">Save</p>
               <p className="greenBtn" style={{background:"red",marginLeft:"10px"}}>Cancel</p>
               </div>
               <div></div>

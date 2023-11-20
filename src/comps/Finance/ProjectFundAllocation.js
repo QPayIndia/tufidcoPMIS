@@ -88,7 +88,7 @@ const ProjectFundAllocation = () => {
             <table className="dataTable">
               <thead>
                 <td>
-                  Sr
+                  Sr. No.
                 </td>
                 <td>
                Project
