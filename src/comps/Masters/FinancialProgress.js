@@ -8,7 +8,7 @@ import Header from "../header.js";
 import { Link } from "react-router-dom";
 import Select from 'react-select';
 
-const ProjectProgress = () => {
+const FinancialProgress = () => {
  
   
   const data = [
@@ -29,7 +29,7 @@ const ProjectProgress = () => {
         <div className="bodyContainer">
           <div className="bodyHead">
             <div className="headTop">
-              <h3>Project Progress</h3>
+              <h3>Financial Progress</h3>
              
               <div className="dashItems">
               <img
@@ -37,7 +37,7 @@ const ProjectProgress = () => {
                   src={home}
                   alt="searchIcon"
                 />
-                 <p>/   Project Progress </p>
+                 <p>/   Financial Progress </p>
                 <div className="searchBar">
                  
                 </div>
@@ -132,4 +132,4 @@ const ProjectProgress = () => {
   );
 };
 
-export default ProjectProgress;
+export default FinancialProgress;

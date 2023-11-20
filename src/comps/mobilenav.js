@@ -27,7 +27,7 @@ const MobileNav = () => {
         {name: "Project Master", link: "/projectmaster"},
         {name: "Fund Release", link: "/fundrelease"},
         //{name: "Release History", link: "/releasehistory"},
-        {name: "Project Progress", link: "/projectprogress"},
+        {name: "Financial Progress", link: "/financialprogress"},
         {name: "Project Update", link: "/projectupdate"}
        
       ],
@@ -71,7 +71,7 @@ const MobileNav = () => {
 
         {name: "Project Financial Position", link: "/projectfinancialposition"},
         {name: "Allocation and Expenditure", link: "/allocationandexpenditure"},
-        {name: "Financial Progress", link: "/financialprogress"},
+        {name: "Financial Progress", link: "/financeprogress"},
         {name: "Financial Progress List", link: "/financialprogresslist"},
         {name: "Budget Provision", link: "/budgetprovision"},
         {name: "Finance Report", link: "/financereport"}

@@ -17,7 +17,6 @@ import ProjectUpdation from "./comps/PhysicalProgress/ProjectUpdation";
 import ProjectList from "./comps/PostSanction/ProjectList"
 import ProjectSanction from "./comps/PostSanction/ProjectSanction";
 import FinancialProgressList from "./comps/FinancialProgress/FinancialProgressList";
-import FinancialProgress from "./comps/FinancialProgress/FinancialProgress";
 import Users from "./comps/Users/Users";
 import PreSanctionList from "./comps/PostSanction/PreSanctionList ";
 import SchemeOpeningBalance from "./comps/Finance/SchemeOpeningBalance";
@@ -59,10 +58,10 @@ import PanCardDetails from "./comps/Masters/PanCardDetails";
 import ProjectMaster from "./comps/Masters/ProjectMaster";
 import FundRelease from "./comps/Masters/FundRelease";
 import ReleaseHistory from "./comps/Masters/ReleaseHistory";
-import ProjectProgress from "./comps/Masters/ProjectProgress";
 import ProjectUpdate from "./comps/Masters/ProjectUpdate";
 import ProgressUpdate from "./comps/Masters/ProgressUpdate";
 import ULBTypeMaster from "./comps/Masters/ULBtypeMaster";
+import FinancialProgress from "./comps/Masters/FinancialProgress";
 
 
 
@@ -82,7 +81,7 @@ import ULBTypeMaster from "./comps/Masters/ULBtypeMaster";
       <Route path="/vendormaster" element={<VendorMaster />} />
       <Route path="/presanction" element={<PreSanctionList />} />
       <Route path="/projects" element={<ProjectList />} />
-      <Route path="/financialprogress" element={<FinancialProgress />} />
+      <Route path="/financeprogress" element={<FinancialProgress />} />
       <Route path="/projectsanction" element={<ProjectSanction />} />
       <Route path="/projectupdation" element={<ProjectUpdation />} />
       <Route path="/financialprogresslist" element={<FinancialProgressList />} />
@@ -120,7 +119,7 @@ import ULBTypeMaster from "./comps/Masters/ULBtypeMaster";
       <Route path="/projectmaster" element={<ProjectMaster />} />
       <Route path="/fundrelease" element={<FundRelease />} />
       <Route path="/releasehistory" element={<ReleaseHistory />} />
-      <Route path="/projectprogress" element={<ProjectProgress />} />
+      <Route path="/financialprogress" element={<FinancialProgress />} />
       <Route path="/projectupdate" element={<ProjectUpdate />} />
       <Route path="/progressupdate" element={<ProgressUpdate />} />
 

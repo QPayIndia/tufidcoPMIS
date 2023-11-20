@@ -25,7 +25,8 @@ const ProjectUpdate = () => {
     { value: "", label: "Parks", color: "#fffff" },
     { value: "", label: "Water Bodies", color: "#fffff" },
     { value: "", label: "UGSS", color: "#fffff" },
-    { value: "", label: "School", color: "#fffff" }
+    { value: "", label: "School", color: "#fffff" },
+    { value: "", label: "BT Roads", color: "#fffff" }
     ];
 
   const options = [
@@ -64,11 +65,13 @@ const ProjectUpdate = () => {
    
     {
       name:"Ring Road 1",
-      id:"K_MI_088_2022_W_1993"
+      id:"K_MI_088_2022_W_1993",
+      sector : "BT Roads"
     },
     {
       name:"Ring Road 2",
-      id:"K_MI_088_2022_W_1993"
+      id:"K_MI_088_2022_W_1994",
+      sector : "BT Roads"
     }
     
   ];
@@ -165,6 +168,40 @@ const ProjectUpdate = () => {
                         </td>
                   </tr>
                 </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  Technical Specification Ref No
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+
+                  </td>
+                  </tr>
+                </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                 TS Date
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                      <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
+
+                      <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
+
+                      </div>
+
+                        </td>
+                  </tr>
+                </table>
+
                 <table>
                   <tr>
                     <td style={{width:"30%"}}>
@@ -248,38 +285,7 @@ const ProjectUpdate = () => {
                   </tr>
                 </table>
 
-                <table>
-                  <tr>
-                    <td style={{width:"30%"}}>
-                    <p >
-                  Technical Specification Ref No
-                    </p>
-                    </td>
-                    <td style={{width:"100%"}}>
-                  <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-
-                  </td>
-                  </tr>
-                </table>
-
-                <table>
-                  <tr>
-                    <td style={{width:"30%"}}>
-                    <p >
-                 TS Date
-                    </p>
-                    </td>
-                    <td style={{width:"100%"}}>
-                      <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input>
-
-                      <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
-
-                      </div>
-
-                        </td>
-                  </tr>
-                </table>
+             
 
                 <table>
                   <tr>
@@ -291,7 +297,7 @@ const ProjectUpdate = () => {
                     <td style={{width:"100%"}}>
                     <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
                     <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-                    <p>(Lakhs)</p>
+                    <p>(Lakh)</p>
                       </div>
                    
                         </td>
@@ -328,7 +334,7 @@ const ProjectUpdate = () => {
                     <td style={{width:"100%"}}>
                     <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
                     <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-                    <p>(Lakhs)</p>
+                    <p>(Lakh)</p>
                       </div>
                    
                         </td>
@@ -346,7 +352,7 @@ const ProjectUpdate = () => {
                     <td style={{width:"100%"}}>
                     <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
                     <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-                    <p>(Lakhs)</p>
+                    <p>(Lakh)</p>
                       </div>
                    
                         </td>
@@ -389,6 +395,12 @@ const ProjectUpdate = () => {
                   Sr. No.
                 </td>
                 <td>
+                  Sector
+                </td>
+                <td>
+                  Project Id
+                </td>
+                <td>
               Project Name
                 </td>
                 <td>
@@ -405,10 +417,16 @@ const ProjectUpdate = () => {
                     {index+1}
 
                </td>
-               
+               <td>
+               {item.sector}
+               </td>
+               <td>
+               {item.id}
+               </td>
                <td>
                {item.name}
                </td>
+              
                <td>
                <div className="rowAfter">
                   

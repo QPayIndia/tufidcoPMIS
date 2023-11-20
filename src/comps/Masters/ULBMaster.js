@@ -42,12 +42,12 @@ const ULBMaster = () => {
   const data = [
    
     {
-      name:"KNMT",
+      name:"Ambasamudram",
       district:"Chennai",
       type :"-"
     },
     {
-      name:"Sinagara Chennai",
+      name:"Pudukottai",
       district : "Kanchipuram",
       type :"-"
     }
@@ -143,13 +143,17 @@ const ULBMaster = () => {
             </div>
             <div style={{display:"flex",flexDirection:"row",marginTop:"10px",verticalAlign:"center"}}>
            <div style={{display:"flex",justifyContent:"space-evenly",flexDirection:"column"}}> 
-           <p >Select Master Excel File</p>
+           <p >Upload Master Excel File</p>
            </div>
               <div className="Btn" style={{marginLeft:"20px"}}>
               Select File
               </div>
+              
 
             </div>
+            <div style={{display:"flex",flexDirection:"row",marginTop:"0px"}}>
+              <p className="greenBtn">Save</p>
+              </div>
           </div>
 
           <div className="tableContainer">

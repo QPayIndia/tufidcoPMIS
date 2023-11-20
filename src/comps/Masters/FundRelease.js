@@ -112,7 +112,7 @@ const FundRelease = () => {
                     </td>
                     <td style={{width:"100%"}}>
                       <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
-                      <input style={{height:"30px",marginLeft:"20px",width:"40%"}} type="text"></input> 
+                      <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input> 
                       <span className="material-symbols-rounded" style={{color:"black",cursor:"pointer"}}>calendar_month</span>
                       </div>
 
@@ -130,7 +130,7 @@ const FundRelease = () => {
                     <td style={{width:"100%"}}>
                     <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
                     <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-                    <p>(Lakhs)</p>
+                    <p>(Lakh)</p>
                       </div>
                    
                      
@@ -195,7 +195,7 @@ const FundRelease = () => {
                 Release Date
                 </td>
                 <td>
-               Release Amount (lakhs)
+               Release Amount (Lakh)
                 </td>
                 <td>
               Action

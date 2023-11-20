@@ -108,24 +108,7 @@ const ProgressUpdate = () => {
                     </td>
                     <td style={{width:"100%"}}>
                     <div style={{width:"80%",marginLeft:"20px"}}>
-                      <p>Rs 45.00 (in Lakhs)</p>
-                      </div>
-                   
-                        </td>
-                  </tr>
-                </table>
-
-                <table>
-                  <tr>
-                    <td style={{width:"30%"}}>
-                    <p >
-                  Expenditure Amount
-                    </p>
-                    </td>
-                    <td style={{width:"100%"}}>
-                    <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
-                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
-                    <p>(Lakhs)</p>
+                      <p>Rs 45.00 (in Lakh)</p>
                       </div>
                    
                         </td>
@@ -147,6 +130,25 @@ const ProgressUpdate = () => {
                         </td>
                   </tr>
                 </table>
+
+                <table>
+                  <tr>
+                    <td style={{width:"30%"}}>
+                    <p >
+                  Expenditure Amount
+                    </p>
+                    </td>
+                    <td style={{width:"100%"}}>
+                    <div style={{width:"100%",gap:"20px",display:"flex",flexDirection:"row"}}>
+                    <input style={{height:"30px",marginLeft:"20px",width:"80%"}} type="text"></input>
+                    <p>(Lakh)</p>
+                      </div>
+                   
+                        </td>
+                  </tr>
+                </table>
+
+               
 
                
                 <table>
@@ -248,10 +250,10 @@ const ProgressUpdate = () => {
                 Date of Update
                 </td>
                 <td>
-                Expenditure Amount (Lakhs)
+                Expenditure Amount (Lakh)
                 </td>
                 <td>
-               Value of Work Done (Lakhs)
+               Value of Work Done (Lakh)
                 </td>
                 <td>
                Action
