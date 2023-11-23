@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/tufidcoPMIS/static/css/main.b303cafc.css",
-    "main.js": "/tufidcoPMIS/static/js/main.e6ac23bb.js",
+    "main.css": "/tufidcoPMIS/static/css/main.a1e675bc.css",
+    "main.js": "/tufidcoPMIS/static/js/main.986a2768.js",
     "static/js/787.625357ab.chunk.js": "/tufidcoPMIS/static/js/787.625357ab.chunk.js",
     "static/media/tn-l.png": "/tufidcoPMIS/static/media/tn-l.0f47287e22100be4e0c9.png",
     "static/media/revenueIcon.svg": "/tufidcoPMIS/static/media/revenueIcon.6c4f7119db80f3e2418d3b65ddab1b4f.svg",
@@ -17,12 +17,12 @@
     "static/media/apple-icon.svg": "/tufidcoPMIS/static/media/apple-icon.a792e594fe18353bdd70e37a3510d470.svg",
     "index.html": "/tufidcoPMIS/index.html",
     "static/media/search.svg": "/tufidcoPMIS/static/media/search.063cb8f0db78e84763a7b4c2b4816000.svg",
-    "main.b303cafc.css.map": "/tufidcoPMIS/static/css/main.b303cafc.css.map",
-    "main.e6ac23bb.js.map": "/tufidcoPMIS/static/js/main.e6ac23bb.js.map",
+    "main.a1e675bc.css.map": "/tufidcoPMIS/static/css/main.a1e675bc.css.map",
+    "main.986a2768.js.map": "/tufidcoPMIS/static/js/main.986a2768.js.map",
     "787.625357ab.chunk.js.map": "/tufidcoPMIS/static/js/787.625357ab.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b303cafc.css",
-    "static/js/main.e6ac23bb.js"
+    "static/css/main.a1e675bc.css",
+    "static/js/main.986a2768.js"
   ]
 }
